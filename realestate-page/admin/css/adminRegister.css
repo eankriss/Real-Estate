@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    
+   height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #53e26b, #0e7ad3) ;
+    padding: 10px;
+}.container{
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+
+
+.container .title{
+    font-size: 25px;
+    font-weight: 500px;
+    letter-spacing: 1px;
+    position: relative;
+}
+.container .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background:green;
+}
+.container form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+form .user-details .input-box{
+    
+    margin: 20px 0 12px 0;
+    width: calc(100% / 2 - 20px);
+}
+.user-details .input-box .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 15px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+    border-color: #039935;
+}
+form .button{
+    height: 45px;
+    margin: 10px 0;
+}
+form .button input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #53e26b, #0e7ad3);
+}
+form .button input:hover{
+    background: linear-gradient(135deg, #0e7ad3, #53e26b);
+    cursor: pointer;
+}
+
+.backlink{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #666666
+    
+}
+
+.backlink a{
+    color: #2691d9;
+    text-decoration: none;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.backlink a:hover{
+    text-decoration: underline;
+}
+
+@media (max-width: 584px){
+    .container{
+        max-width: 100%;
+    }
+    form .user-details .input-box{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    .container form .user-details{
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+}
+
+
+  /*.login{
+    position: relative;
+    border-style:groove;
+    padding: 50px;
+    margin-top: 300px;
+  }*/
